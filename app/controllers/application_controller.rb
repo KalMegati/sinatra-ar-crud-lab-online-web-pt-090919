@@ -42,10 +42,10 @@ class ApplicationController < Sinatra::Base
   end
   
   patch '/articles/:id' do
-    binding.pry
+    #binding.pry
     @article = Article.update(params[:article])
     #binding.pry
-    redirect to "/articles/#{@article[0].id}"
+    redirect to "/articles/#{@article.id}"
   end
   
 end
