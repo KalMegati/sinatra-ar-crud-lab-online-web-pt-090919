@@ -24,6 +24,7 @@ class ApplicationController < Sinatra::Base
     redirect to "/articles/#{@article.id}"
   end
   
+  #Show
   get "/articles/:id" do
 
     erb :show
