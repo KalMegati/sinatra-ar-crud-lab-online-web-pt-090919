@@ -8,7 +8,6 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-
   #Base
   get '/' do
   end
@@ -35,5 +34,7 @@ class ApplicationController < Sinatra::Base
     @articles = Article.all
     erb :index
   end
+  
+  
   
 end
